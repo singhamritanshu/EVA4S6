@@ -9,8 +9,7 @@ import model_arc as c
 from tqdm import tqdm
 import back_prop as b 
 import arc as m 
-#a.transform_data()
-#b.back()
+
 l = [c,m]
 for i in l:
     model = i.Net().to(i.device)
