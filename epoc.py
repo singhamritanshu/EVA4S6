@@ -5,11 +5,10 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 import load_data as a
-import model_arc as c
+import with_bn as c
 from tqdm import tqdm
 import back_prop as b 
-import arc as m 
-
+import l1_bn as m 
 l = [c,m]
 for i in l:
     model = i.Net().to(i.device)
