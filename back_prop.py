@@ -10,8 +10,6 @@ train_losses = []
 test_losses = []
 train_acc = []
 test_acc = []
-train_loader = []
-test_loader = []
 
 def train(model, device, train_loader, optimizer, epoch):  
   model.train()
