@@ -370,7 +370,6 @@ Loss=0.00023573551152367145 Batch_id=937 Accuracy=99.93: 100%|██████
 
 Test set: Average loss: 0.0226, Accuracy: 9937/10000 (99.37%)
 
-<<<<<<< HEAD
 
 
 
@@ -542,11 +541,3 @@ Higgest test accuracy = EPOCH: 7
 Loss=0.00010942769586108625 Batch_id=937 Accuracy=99.95: 100%|████████████████████████████████████████████████████| 938/938 [00:49<00:00, 18.97it/s]
 
 Test set: Average loss: 0.0190, Accuracy: 9951/10000 (99.51%)
-=======
-(ml) amritanshusingh@Amritanshus-MacBook-Pro EVA4S6 % 
-
-Higgest test accuracy = EPOCH: 11 With batch normalization and with L1 regularization.
-Loss=0.005141834262758493 Batch_id=937 Accuracy=99.73: 100%|██████████████████████████████████████████████████████| 938/938 [00:49<00:00, 19.09it/s]
-
-Test set: Average loss: 0.0183, Accuracy: 9952/10000 (99.52%)
->>>>>>> 85a3e3bdd133754d5631322b2833f052d9ed67f0
