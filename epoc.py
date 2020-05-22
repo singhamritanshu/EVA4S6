@@ -9,6 +9,8 @@ import model_arc as c
 from tqdm import tqdm
 import train_test as t
 import l1_reg as l1
+import model_arc_noBN as b 
+import sys
 import matplotlib.pyplot as plt
 
 model = c.Net().to(c.device)
@@ -25,11 +27,16 @@ def visualize_graph(train_losses, train_acc, test_losses, test_acc):
   axs[1, 1].plot(test_acc)
   axs[1, 1].set_title("Test Accuracy")
 l = [t,l1]
-for i in l:
-    print(i)
-    for epoch in range(EPOCHS):
-        print("EPOCH:", epoch)
-        i.train(model, c.device,a.train_loader, optimizer, epoch)
-        i.test(model, c.device, a.test_loader)
+l1 = [c,b]
+for j in l1:
+    print("\n")
+    for i in l:
+        print("\n")
+        print("\n Running module is",j,i)
+        print("\n")
+        for epoch in range(EPOCHS):
+            print("EPOCH:", epoch)
+            i.train(model, c.device,a.train_loader, optimizer, epoch)
+            i.test(model, c.device, a.test_loader)
 
 visualize_graph(i.train_losses, i.train_acc, i.test_losses, i.test_acc)
