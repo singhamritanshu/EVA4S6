@@ -10,6 +10,7 @@ from tqdm import tqdm
 import train_test as t
 import l1_reg as l1
 import model_arc_noBN as b 
+import l2_reg as l2
 import sys
 import matplotlib.pyplot as plt
 
@@ -26,7 +27,7 @@ def visualize_graph(train_losses, train_acc, test_losses, test_acc):
   axs[0, 1].set_title("Test Loss")
   axs[1, 1].plot(test_acc)
   axs[1, 1].set_title("Test Accuracy")
-l = [t,l1]
+l = [t,l1,l2]
 l1 = [c,b]
 for j in l1:
     print("\n")
