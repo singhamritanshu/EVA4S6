@@ -12,8 +12,12 @@ Train and Test accuracy with Batch Normalisation and L1 regularization and L2 re
 You need to insatll the following dependencies:
 
 Pytorch
+
 Tqdm
+
 Matplotlib
+
 Torchsummary
+
 TorchVision
 
