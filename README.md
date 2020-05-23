@@ -27,7 +27,7 @@ Torchsummary
 
 TorchVision
 
-File Name and what feature they contaion.
+File Name and what feature they contaion: 
 
 epoch.py - To run all the epoch.
 
