@@ -13,4 +13,7 @@ You need to insatll the following dependencies:
 
 Pytorch
 Tqdm
-matplotlib
+Matplotlib
+Torchsummary
+TorchVision
+
