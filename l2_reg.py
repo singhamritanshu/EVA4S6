@@ -16,8 +16,6 @@ import matplotlib.pyplot as plt
 LR=0.1
 MOMENTUM=0.9
 WEIGHT_DECAY=1e-5
-optimizer = optim.SGD(c.model.parameters(), lr=LR, momentum=MOMENTUM, weight_decay=WEIGHT_DECAY)
-
 train_losses = []
 test_losses = []
 train_acc = []
@@ -34,6 +32,7 @@ def train(model, device, train_loader, optimizer, epoch):
 
     # Init
     optimizer.zero_grad()
+    optimizer = optim.SGD(model.parameters(), lr=LR, momentum=MOMENTUM, weight_decay=WEIGHT_DECAY)
     # In PyTorch, we need to set the gradients to zero before starting to do backpropragation because PyTorch accumulates the gradients on subsequent backward passes. 
     # Because of this, when you start your training loop, ideally you should zero out the gradients so that you do the parameter update correctly.
 
