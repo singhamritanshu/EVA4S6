@@ -27,3 +27,17 @@ Torchsummary
 
 TorchVision
 
+epoch.py - To run all the epoch.
+
+l1_l2_reg = This contains l1 and l2 regularization
+
+l1_reg = This contains l1 regularization 
+
+l2_ reg = This contains l2 regularization 
+
+load_data = This contains data loader and data transformation file 
+
+model_arc_noBN = THis contains the model in which I have removed the batch normaliation
+
+model arc = This contains the model in which batch normalisation is there 
+
