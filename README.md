@@ -27,6 +27,8 @@ Torchsummary
 
 TorchVision
 
+File Name and what feature they contaion.
+
 epoch.py - To run all the epoch.
 
 l1_l2_reg = This contains l1 and l2 regularization

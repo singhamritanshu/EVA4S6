@@ -48,6 +48,7 @@ for j in la:
 print("\n")
 print("\n Running module is",j,i)
 print("\n")
+EPOCHS = 15 
 for epoch in range(EPOCHS):
             print("EPOCH:", epoch)
             l.train(c.model, c.device,a.train_loader, optimizer, epoch)
