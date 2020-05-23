@@ -4,7 +4,19 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
+import load_data as a
+import model_arc as c
 from tqdm import tqdm
+import train_test as t
+import l1_reg as l1
+import model_arc_noBN as b 
+import sys
+import matplotlib.pyplot as plt
+
+LR=0.1
+MOMENTUM=0.9
+WEIGHT_DECAY=1e-5
+optimizer = optim.SGD(c.model.parameters(), lr=LR, momentum=MOMENTUM, weight_decay=WEIGHT_DECAY)
 
 train_losses = []
 test_losses = []
@@ -42,8 +54,6 @@ def train(model, device, train_loader, optimizer, epoch):
 
     loss += F.nll_loss(y_pred, target)
     train_losses.append(loss)
-
-    
 
     # Backpropagation
     loss.backward()
